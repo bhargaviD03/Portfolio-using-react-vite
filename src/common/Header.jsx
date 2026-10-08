@@ -1,6 +1,9 @@
-import React from 'react'
-import {Fragment} from 'react'
-import './Header.css'
+import React, { Fragment } from "react";
+import "./Header.css";
+import { BsDownload } from "react-icons/bs";
+
+import Resume from "../assets/Resume.pdf";
+import wallpaper from "../assets/wallpaper.jpg";
 
     let menu =[
         {
@@ -50,7 +53,7 @@ export const Header = () => {
     <Fragment>
       <header>
         <div className="log">
-            <img src="assets/wallpaper.jpg" alt="img" />
+            <img src={wallpaper} alt="img" />
             <div className="logo" style={{ marginTop: '15px' }}>
                 <span style={{ color: 'var(--primary-accent)' }}>D</span>ONTHIREDDY
                 <span style={{ color: 'var(--primary-accent)' }}>B</span>HARGAVI
@@ -70,8 +73,8 @@ export const Header = () => {
 
 
             <div className="resume">
-                <a href="Donthireddy Bhargavi Resume.pdf">
-                    <button><i className="bi bi-download"></i> Resume</button>
+                <a href={Resume} download="Resume.pdf">
+                    <button><BsDownload /> Resume</button>
                 </a>
             </div>
         </div>
