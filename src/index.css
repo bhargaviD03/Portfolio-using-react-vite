@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-main: #f8f7f4;
+    --card-bg: #fffdfb;
+    --card-elevated: #f4efea;
+    --primary-accent: #882635;
+    --accent-hover: #6f1d2b;
+    --text-main: #101010;
+    --text-secondary: #6b7280;
+    --border-color: #e7e0d9;
+    --muted-bg: #f1dde0;
+    --accent-glow: #88263526;
+    --hero-gradient: radial-gradient(
+        circle at top right,
+        #f1dde0cc,
+        transparent 50%
+    );
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
